@@ -20,7 +20,7 @@ list(APPEND CMAKE_CXX_FLAGS "-std=c++11")
 # find the required packages
 find_package(GLM REQUIRED)
 message(STATUS "GLM included at ${GLM_INCLUDE_DIR}")
-find_package(GLFW3 REQUIRED)
+find_package(GLFW3 3.2 REQUIRED)
 message(STATUS "Found GLFW3 in ${GLFW3_INCLUDE_DIR}")
 find_package(ASSIMP REQUIRED)
 message(STATUS "Found ASSIMP in ${ASSIMP_INCLUDE_DIR}")
